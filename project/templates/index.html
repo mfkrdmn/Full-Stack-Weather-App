@@ -69,30 +69,23 @@
 				<div class="container">
 					<div class="forecast-container">
 
-						
-
 						<div class="today forecast">
 							<div class="forecast-header">
 								<div class="day">Monday</div>
 								<div class="date">6 Oct</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
-								<div class="location">{{country_code}}</div>
+								<div class="location">{{cityname}}/{{country_code}}</div>
 								<div class="degree">
-									<div class="num">{{temp}}<sup>o</sup>C</div>{{coordinate}}
+									<div class="num">{{temp}}</div>
 									<div class="forecast-icon">
 										<img src="images/icons/icon-1.svg" alt="" width=90>
 									</div>	
 								</div>
-								<span><img src="images/icon-umberella.png" alt="">{{humidity}}%</span>
-								<span><img src="images/icon-wind.png" alt="">{{pressure}}km/h</span>
-								<span><img src="images/icon-compass.png" alt="">East</span>
-								<h2>{{main}}</h2>
-								<h2>{{description}}</h2>
+								<span><img src="{% static 'images/icon-wind.png' %}" alt="">{{wind}}km/h</span>
+								<h2 style="margin-top:10px">{{description}}</h2>
 							</div>
-						</div>
-
-						
+						</div>						
 						
 						<div class="forecast">
 							<div class="forecast-header">
